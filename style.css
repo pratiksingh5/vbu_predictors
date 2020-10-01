@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#background{
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    color:white;
+    opacity: 0.95;
+  }
+  #background header{
+    width: 100%;
+    height: 7rem;
+    border: 1px thin white;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h2{
+    font-family: 'poppins';
+    font-family: 300;
+  }
+  #background h1
+  {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'montserrat';
+    font-family: 400;
+    letter-spacing: 1px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+  }
+  #texture{
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    z-index: -999;
+  }
+  #background h4{
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  input[type="text"]{
+    width: 500px;
+    height: 40px;
+    border: solid white 1px;
+    border-radius: 2px;
+  }
+  #login{
+    cursor: pointer;
+  }
+  #modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    width: 30%;
+    /* height: 50%; */
+    border-radius: 5px;
+    box-shadow: 0 0 0 2000px rgba(0,0,0,0.5);
+    background-color: #fff;
+    padding: 40px 20px;
+    transition: all 5s ease-in;
+  }
+  
+  #modal .cross{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    color:black;
+  }
+  
+  #modal input[type="text"]{
+    padding: 0.6rem 1.2rem;
+    width: 100%;
+    display: block;
+    border: 1.3px solid #e3e3e3;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  #modal input[type="password"]{
+    padding: 0.6rem 1.2rem;
+    width: 100%;
+    display: block;
+    border: 1.3px solid #e3e3e3;
+    border-radius: 4px;
+  }
+  
+  
+  #modal button{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0.7rem 1.5rem;
+    background-color: rgb(26, 189, 211);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  a{
+    text-decoration: none;
+  }
+  #table{
+    font-family: 'lato';
+    letter-spacing: 0.3px;
+    min-height: 100vh;
+    width: 80%;
+    background-color: rgb(2, 2, 2);
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  
+  }
+  #overlay1{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(236, 238, 238);
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+  }
+  #overlay2{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(26, 145, 145);
+    position: absolute;
+    z-index: 999;
+    top: 0;
+  }
+  #overlay3{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(34, 34, 34);
+    position: absolute;
+    z-index: 998;
+    top: 0;
+  }
+  body{
+      overflow-x: hidden;
+  }
